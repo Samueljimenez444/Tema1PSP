@@ -1,0 +1,99 @@
+[
+    {
+        "label": "FastAPI",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "BaseModel",
+        "importPath": "pydantic",
+        "description": "pydantic",
+        "isExtraImport": true,
+        "detail": "pydantic",
+        "documentation": {}
+    },
+    {
+        "label": "Profesor",
+        "kind": 6,
+        "importPath": "Proyecto.main",
+        "description": "Proyecto.main",
+        "peekOfCode": "class Profesor(BaseModel):\n    id: int\n    DNI: str\n    nombre: str\n    apellidos: str\n    telefono: str\n    direccion: str\n    cuentaBancaria: str\nprofesores_db = [\n    Profesor(id=1, DNI=\"123432456A\", nombre=\"Fernando\", apellidos=\"Galiana\", telefono=\"654123456\", direccion=\"Calle Victor Torres\", cuentaBancaria=\"ES3424234234\"),",
+        "detail": "Proyecto.main",
+        "documentation": {}
+    },
+    {
+        "label": "root",
+        "kind": 2,
+        "importPath": "Proyecto.main",
+        "description": "Proyecto.main",
+        "peekOfCode": "def root():\n    return {\"message\": \"API de Profesores\"}\n@app.get(\"/profesores\")\ndef get_profesores():\n    return profesores_db\n@app.get(\"/profesores/{id}\")\ndef get_profesor(id: int):\n    for profesor in profesores_db:\n        if profesor.id == id:\n            return profesor",
+        "detail": "Proyecto.main",
+        "documentation": {}
+    },
+    {
+        "label": "get_profesores",
+        "kind": 2,
+        "importPath": "Proyecto.main",
+        "description": "Proyecto.main",
+        "peekOfCode": "def get_profesores():\n    return profesores_db\n@app.get(\"/profesores/{id}\")\ndef get_profesor(id: int):\n    for profesor in profesores_db:\n        if profesor.id == id:\n            return profesor\n    return {\"error\": \"Profesor no encontrado\"}\n@app.get(\"/profesores/buscarDNI/{DNI}\")\ndef get_profesor_dni(DNI: str):",
+        "detail": "Proyecto.main",
+        "documentation": {}
+    },
+    {
+        "label": "get_profesor",
+        "kind": 2,
+        "importPath": "Proyecto.main",
+        "description": "Proyecto.main",
+        "peekOfCode": "def get_profesor(id: int):\n    for profesor in profesores_db:\n        if profesor.id == id:\n            return profesor\n    return {\"error\": \"Profesor no encontrado\"}\n@app.get(\"/profesores/buscarDNI/{DNI}\")\ndef get_profesor_dni(DNI: str):\n    for profesor in profesores_db:\n        if profesor.DNI == DNI:\n            return profesor",
+        "detail": "Proyecto.main",
+        "documentation": {}
+    },
+    {
+        "label": "get_profesor_dni",
+        "kind": 2,
+        "importPath": "Proyecto.main",
+        "description": "Proyecto.main",
+        "peekOfCode": "def get_profesor_dni(DNI: str):\n    for profesor in profesores_db:\n        if profesor.DNI == DNI:\n            return profesor\n    return {\"error\": \"Profesor no encontrado\"}\n@app.get(\"/profesores/buscarNombre/{nombre}\")\ndef get_profesor_nombre(nombre: str):\n    for profesor in profesores_db:\n        if profesor.nombre == nombre:\n            return profesor",
+        "detail": "Proyecto.main",
+        "documentation": {}
+    },
+    {
+        "label": "get_profesor_nombre",
+        "kind": 2,
+        "importPath": "Proyecto.main",
+        "description": "Proyecto.main",
+        "peekOfCode": "def get_profesor_nombre(nombre: str):\n    for profesor in profesores_db:\n        if profesor.nombre == nombre:\n            return profesor\n    return {\"error\": \"Profesor no encontrado\"}\n@app.get(\"/profesores/buscarTelefono/{telefono}\")\ndef get_profesor_telefono(telefono: str):\n    for profesor in profesores_db:\n        if profesor.telefono == telefono:\n            return profesor",
+        "detail": "Proyecto.main",
+        "documentation": {}
+    },
+    {
+        "label": "get_profesor_telefono",
+        "kind": 2,
+        "importPath": "Proyecto.main",
+        "description": "Proyecto.main",
+        "peekOfCode": "def get_profesor_telefono(telefono: str):\n    for profesor in profesores_db:\n        if profesor.telefono == telefono:\n            return profesor\n    return {\"error\": \"Profesor no encontrado\"}",
+        "detail": "Proyecto.main",
+        "documentation": {}
+    },
+    {
+        "label": "app",
+        "kind": 5,
+        "importPath": "Proyecto.main",
+        "description": "Proyecto.main",
+        "peekOfCode": "app = FastAPI()\nclass Profesor(BaseModel):\n    id: int\n    DNI: str\n    nombre: str\n    apellidos: str\n    telefono: str\n    direccion: str\n    cuentaBancaria: str\nprofesores_db = [",
+        "detail": "Proyecto.main",
+        "documentation": {}
+    },
+    {
+        "label": "profesores_db",
+        "kind": 5,
+        "importPath": "Proyecto.main",
+        "description": "Proyecto.main",
+        "peekOfCode": "profesores_db = [\n    Profesor(id=1, DNI=\"123432456A\", nombre=\"Fernando\", apellidos=\"Galiana\", telefono=\"654123456\", direccion=\"Calle Victor Torres\", cuentaBancaria=\"ES3424234234\"),\n    Profesor(id=2, DNI=\"654646747B\", nombre=\"David\", apellidos=\"Bermudez\", telefono=\"654987654\", direccion=\"Avenida Nervion\", cuentaBancaria=\"ES654765873\"),\n    Profesor(id=3, DNI=\"11111111C\", nombre=\"Elena\", apellidos=\"Rivero\", telefono=\"654456789\", direccion=\"Plaza España\", cuentaBancaria=\"ES14342443244\")\n]\n@app.get(\"/\")\ndef root():\n    return {\"message\": \"API de Profesores\"}\n@app.get(\"/profesores\")\ndef get_profesores():",
+        "detail": "Proyecto.main",
+        "documentation": {}
+    }
+]
