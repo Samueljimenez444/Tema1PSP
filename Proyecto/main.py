@@ -1,10 +1,13 @@
 from fastapi import FastAPI
+from typing import Optional
 from pydantic import BaseModel
+from fastapi import HTTPException
+
 
 app = FastAPI()
 
 class Profesor(BaseModel):
-    id: int
+    id: Optional[int] = None
     DNI: str
     nombre: str
     apellidos: str
@@ -53,3 +56,42 @@ def get_profesor_telefono(telefono: str):
         if profesor.telefono == telefono:
             return profesor
     return {"error": "Profesor no encontrado"}
+
+@app.get("/profesores/")
+def get_query_telefo_dni(dni: str):
+    for profesor in profesores_db:
+        if profesor.DNI == dni:
+            return profesor
+    return {"error": "No hay un profesor con esas características"}
+
+def next_id():
+    return max(profesor.id for profesor in profesores_db) + 1
+    
+
+@app.post("/profesores" , status_code=201, response_model=Profesor)
+def añadir_profesor(profesor: Profesor):
+
+    profesor.id=next_id()
+
+    profesores_db.append(profesor)
+
+    return profesor
+
+@app.put("/profesores" , response_model=Profesor)
+def modificar_profesor(id: int, profesor: Profesor):
+
+        for index, profesor_guardado in enumerate(profesores_db):
+            if(profesor_guardado.id == id):
+                profesor.id=id
+                profesores_db[index] = profesor
+                return profesor
+        raise HTTPException(status_code=404, detail="Profesor no encontrado")
+        
+@app.delete("/profesores/{id}")
+def borrar_profesor(id:int):
+    for profesor_guardado in profesores_db:
+        if profesor_guardado.id == id:
+            profesores_db.remove(profesor_guardado)
+            return{}
+    raise HTTPException(status_code=404 , detail="Profesor no encontrado")
+
