@@ -1,11 +1,107 @@
 [
     {
-        "label": "pydantic",
+        "label": "FastAPI",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "APIRouter",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "HTTPException",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "FastAPI",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "APIRouter",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "HTTPException",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "Depends",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "APIRouter",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "HTTPException",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "routers",
         "kind": 6,
         "isExtraImport": true,
-        "importPath": "pydantic",
-        "description": "pydantic",
-        "detail": "pydantic",
+        "importPath": "routers",
+        "description": "routers",
+        "detail": "routers",
+        "documentation": {}
+    },
+    {
+        "label": "asignaturas",
+        "importPath": "routers",
+        "description": "routers",
+        "isExtraImport": true,
+        "detail": "routers",
+        "documentation": {}
+    },
+    {
+        "label": "profesores",
+        "importPath": "routers",
+        "description": "routers",
+        "isExtraImport": true,
+        "detail": "routers",
+        "documentation": {}
+    },
+    {
+        "label": "auth_users",
+        "importPath": "routers",
+        "description": "routers",
+        "isExtraImport": true,
+        "detail": "routers",
         "documentation": {}
     },
     {
@@ -25,43 +121,69 @@
         "documentation": {}
     },
     {
-        "label": "FastAPI",
-        "importPath": "fastapi",
-        "description": "fastapi",
+        "label": "BaseModel",
+        "importPath": "pydantic",
+        "description": "pydantic",
         "isExtraImport": true,
-        "detail": "fastapi",
+        "detail": "pydantic",
         "documentation": {}
     },
     {
-        "label": "HTTPException",
-        "importPath": "fastapi",
-        "description": "fastapi",
+        "label": "OAuth2PasswordBearer",
+        "importPath": "fastapi.security",
+        "description": "fastapi.security",
         "isExtraImport": true,
-        "detail": "fastapi",
+        "detail": "fastapi.security",
         "documentation": {}
     },
     {
-        "label": "FastAPI",
-        "importPath": "fastapi",
-        "description": "fastapi",
+        "label": "OAuth2PasswordRequestForm",
+        "importPath": "fastapi.security",
+        "description": "fastapi.security",
         "isExtraImport": true,
-        "detail": "fastapi",
+        "detail": "fastapi.security",
         "documentation": {}
     },
     {
-        "label": "HTTPException",
-        "importPath": "fastapi",
-        "description": "fastapi",
+        "label": "PasswordHash",
+        "importPath": "pwdlib",
+        "description": "pwdlib",
         "isExtraImport": true,
-        "detail": "fastapi",
+        "detail": "pwdlib",
         "documentation": {}
     },
     {
-        "label": "Asignatura",
-        "importPath": "Proyecto.asignaturas",
-        "description": "Proyecto.asignaturas",
+        "label": "jwt",
+        "kind": 6,
         "isExtraImport": true,
-        "detail": "Proyecto.asignaturas",
+        "importPath": "jwt",
+        "description": "jwt",
+        "detail": "jwt",
+        "documentation": {}
+    },
+    {
+        "label": "datetime",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "datetime",
+        "description": "datetime",
+        "detail": "datetime",
+        "documentation": {}
+    },
+    {
+        "label": "InvalidTokenError",
+        "importPath": "jwt.exceptions",
+        "description": "jwt.exceptions",
+        "isExtraImport": true,
+        "detail": "jwt.exceptions",
+        "documentation": {}
+    },
+    {
+        "label": "ALGORITHM",
+        "importPath": "Proyecto.routers.auth_users",
+        "description": "Proyecto.routers.auth_users",
+        "isExtraImport": true,
+        "detail": "Proyecto.routers.auth_users",
         "documentation": {}
     },
     {
@@ -73,228 +195,326 @@
         "documentation": {}
     },
     {
-        "label": "Asignatura",
-        "kind": 6,
-        "importPath": "Proyecto.asignaturas",
-        "description": "Proyecto.asignaturas",
-        "peekOfCode": "class Asignatura(BaseModel):\n    id : int\n    titulo : str\n    num_horas : int\n    id_profesor : int\nlista_asignaturas = [\n    Asignatura(id = 1, titulo=\"Programacion\", num_horas=10, id_profesor=3),\n    Asignatura(id = 2, titulo = \"Sistemas\" , num_horas=5, id_profesor = 1),\n    Asignatura(id = 3 , titulo = \"Moviles\" , num_horas = 3 , id_profesor = 2)\n]",
-        "detail": "Proyecto.asignaturas",
-        "documentation": {}
-    },
-    {
-        "label": "next_id",
-        "kind": 2,
-        "importPath": "Proyecto.asignaturas",
-        "description": "Proyecto.asignaturas",
-        "peekOfCode": "def next_id():\n    return max(asignatura.id for asignatura in lista_asignaturas) + 1\n@app.get(\"/\")\ndef root():\n    return {\"message\": \"API de asignaturas\"}\n@app.get(\"/asignaturas\")\ndef buscar_asignaturas():   \n    return lista_asignaturas\n@app.get(\"/asignaturas/id/{id}\")\ndef buscar_asignaturas_id(id : int):",
-        "detail": "Proyecto.asignaturas",
+        "label": "lista_asignaturas",
+        "importPath": "routers.asignaturas",
+        "description": "routers.asignaturas",
+        "isExtraImport": true,
+        "detail": "routers.asignaturas",
         "documentation": {}
     },
     {
         "label": "root",
         "kind": 2,
-        "importPath": "Proyecto.asignaturas",
-        "description": "Proyecto.asignaturas",
-        "peekOfCode": "def root():\n    return {\"message\": \"API de asignaturas\"}\n@app.get(\"/asignaturas\")\ndef buscar_asignaturas():   \n    return lista_asignaturas\n@app.get(\"/asignaturas/id/{id}\")\ndef buscar_asignaturas_id(id : int):\n    for asignatura in lista_asignaturas:\n        if(asignatura.id == id):\n            return asignatura",
-        "detail": "Proyecto.asignaturas",
+        "importPath": "Proyecto.main.main",
+        "description": "Proyecto.main.main",
+        "peekOfCode": "def root():\n    return {\"message\": \"Bienvenido a la API de Asignaturas y Profesores\"}",
+        "detail": "Proyecto.main.main",
+        "documentation": {}
+    },
+    {
+        "label": "app",
+        "kind": 5,
+        "importPath": "Proyecto.main.main",
+        "description": "Proyecto.main.main",
+        "peekOfCode": "app = FastAPI(title=\"API de Asignaturas y Profesores\")\napp.include_router(asignaturas.router)\napp.include_router(auth_users.router)\napp.include_router(profesores.router)\n@app.get(\"/\")\ndef root():\n    return {\"message\": \"Bienvenido a la API de Asignaturas y Profesores\"}",
+        "detail": "Proyecto.main.main",
+        "documentation": {}
+    },
+    {
+        "label": "Asignatura",
+        "kind": 6,
+        "importPath": "Proyecto.routers.asignaturas",
+        "description": "Proyecto.routers.asignaturas",
+        "peekOfCode": "class Asignatura(BaseModel):\n    id: int\n    titulo: str\n    num_horas: int\n    id_profesor: int\nlista_asignaturas = [\n    Asignatura(id=1, titulo=\"Programacion\", num_horas=10, id_profesor=3),\n    Asignatura(id=2, titulo=\"Sistemas\", num_horas=5, id_profesor=1),\n    Asignatura(id=3, titulo=\"Moviles\", num_horas=3, id_profesor=2)\n]",
+        "detail": "Proyecto.routers.asignaturas",
+        "documentation": {}
+    },
+    {
+        "label": "next_id",
+        "kind": 2,
+        "importPath": "Proyecto.routers.asignaturas",
+        "description": "Proyecto.routers.asignaturas",
+        "peekOfCode": "def next_id():\n    return max(a.id for a in lista_asignaturas) + 1\n@router.get(\"/\")\ndef buscar_asignaturas():\n    return lista_asignaturas\n@router.get(\"/id/{id}\")\ndef buscar_asignaturas_id(id: int):\n    for asignatura in lista_asignaturas:\n        if asignatura.id == id:\n            return asignatura",
+        "detail": "Proyecto.routers.asignaturas",
         "documentation": {}
     },
     {
         "label": "buscar_asignaturas",
         "kind": 2,
-        "importPath": "Proyecto.asignaturas",
-        "description": "Proyecto.asignaturas",
-        "peekOfCode": "def buscar_asignaturas():   \n    return lista_asignaturas\n@app.get(\"/asignaturas/id/{id}\")\ndef buscar_asignaturas_id(id : int):\n    for asignatura in lista_asignaturas:\n        if(asignatura.id == id):\n            return asignatura\n    raise HTTPException (status_code=404, detail=\"Asignatura con esa id no encontrado\")\n@app.get(\"/asignaturas/idProfesor/{id_profesor}\")\ndef buscar_asignaturas_id_profesor(id_profesor : int):",
-        "detail": "Proyecto.asignaturas",
+        "importPath": "Proyecto.routers.asignaturas",
+        "description": "Proyecto.routers.asignaturas",
+        "peekOfCode": "def buscar_asignaturas():\n    return lista_asignaturas\n@router.get(\"/id/{id}\")\ndef buscar_asignaturas_id(id: int):\n    for asignatura in lista_asignaturas:\n        if asignatura.id == id:\n            return asignatura\n    raise HTTPException(status_code=404, detail=\"Asignatura no encontrada\")\n@router.get(\"/idProfesor/{id_profesor}\")\ndef buscar_asignaturas_id_profesor(id_profesor: int):",
+        "detail": "Proyecto.routers.asignaturas",
         "documentation": {}
     },
     {
         "label": "buscar_asignaturas_id",
         "kind": 2,
-        "importPath": "Proyecto.asignaturas",
-        "description": "Proyecto.asignaturas",
-        "peekOfCode": "def buscar_asignaturas_id(id : int):\n    for asignatura in lista_asignaturas:\n        if(asignatura.id == id):\n            return asignatura\n    raise HTTPException (status_code=404, detail=\"Asignatura con esa id no encontrado\")\n@app.get(\"/asignaturas/idProfesor/{id_profesor}\")\ndef buscar_asignaturas_id_profesor(id_profesor : int):\n    for asignatura in lista_asignaturas:\n        if asignatura.id_profesor == id_profesor:\n            return asignatura",
-        "detail": "Proyecto.asignaturas",
+        "importPath": "Proyecto.routers.asignaturas",
+        "description": "Proyecto.routers.asignaturas",
+        "peekOfCode": "def buscar_asignaturas_id(id: int):\n    for asignatura in lista_asignaturas:\n        if asignatura.id == id:\n            return asignatura\n    raise HTTPException(status_code=404, detail=\"Asignatura no encontrada\")\n@router.get(\"/idProfesor/{id_profesor}\")\ndef buscar_asignaturas_id_profesor(id_profesor: int):\n    for asignatura in lista_asignaturas:\n        if asignatura.id_profesor == id_profesor:\n            return asignatura",
+        "detail": "Proyecto.routers.asignaturas",
         "documentation": {}
     },
     {
         "label": "buscar_asignaturas_id_profesor",
         "kind": 2,
-        "importPath": "Proyecto.asignaturas",
-        "description": "Proyecto.asignaturas",
-        "peekOfCode": "def buscar_asignaturas_id_profesor(id_profesor : int):\n    for asignatura in lista_asignaturas:\n        if asignatura.id_profesor == id_profesor:\n            return asignatura\n    raise HTTPException (status_code=404, detail=\"Asignatura con esa id de profesor no encontrado\")\n@app.post(\"/asignatura\" , status_code=201, response_model=Asignatura)\ndef añadir_profesor(asignatura : Asignatura):\n    asignatura.id=next_id()\n    lista_asignaturas.append(asignatura)\n    return asignatura",
-        "detail": "Proyecto.asignaturas",
+        "importPath": "Proyecto.routers.asignaturas",
+        "description": "Proyecto.routers.asignaturas",
+        "peekOfCode": "def buscar_asignaturas_id_profesor(id_profesor: int):\n    for asignatura in lista_asignaturas:\n        if asignatura.id_profesor == id_profesor:\n            return asignatura\n    raise HTTPException(status_code=404, detail=\"Asignatura con ese profesor no encontrada\")\n@router.post(\"/\", status_code=201, response_model=Asignatura)\ndef añadir_asignatura(asignatura: Asignatura):\n    asignatura.id = next_id()\n    lista_asignaturas.append(asignatura)\n    return asignatura",
+        "detail": "Proyecto.routers.asignaturas",
         "documentation": {}
     },
     {
-        "label": "añadir_profesor",
+        "label": "añadir_asignatura",
         "kind": 2,
-        "importPath": "Proyecto.asignaturas",
-        "description": "Proyecto.asignaturas",
-        "peekOfCode": "def añadir_profesor(asignatura : Asignatura):\n    asignatura.id=next_id()\n    lista_asignaturas.append(asignatura)\n    return asignatura\n@app.put(\"/asignatura\" , response_model=Asignatura)\ndef modificar_profesor(id: int, asignatura: Asignatura):\n        for index, asgnatura_guardada in enumerate(lista_asignaturas):\n            if(asgnatura_guardada.id == id):\n                asignatura.id=id\n                lista_asignaturas[index] = asignatura",
-        "detail": "Proyecto.asignaturas",
+        "importPath": "Proyecto.routers.asignaturas",
+        "description": "Proyecto.routers.asignaturas",
+        "peekOfCode": "def añadir_asignatura(asignatura: Asignatura):\n    asignatura.id = next_id()\n    lista_asignaturas.append(asignatura)\n    return asignatura\n@router.put(\"/\", response_model=Asignatura)\ndef modificar_asignatura(id: int, asignatura: Asignatura):\n    for index, asig_guardada in enumerate(lista_asignaturas):\n        if asig_guardada.id == id:\n            asignatura.id = id\n            lista_asignaturas[index] = asignatura",
+        "detail": "Proyecto.routers.asignaturas",
         "documentation": {}
     },
     {
-        "label": "modificar_profesor",
+        "label": "modificar_asignatura",
         "kind": 2,
-        "importPath": "Proyecto.asignaturas",
-        "description": "Proyecto.asignaturas",
-        "peekOfCode": "def modificar_profesor(id: int, asignatura: Asignatura):\n        for index, asgnatura_guardada in enumerate(lista_asignaturas):\n            if(asgnatura_guardada.id == id):\n                asignatura.id=id\n                lista_asignaturas[index] = asignatura\n                return asignatura\n        raise HTTPException(status_code=404, detail=\"Profesor no encontrado\")\n@app.delete(\"/asignatura/{id}\")\ndef borrar_profesor(id:int):\n    for asignatura_guardada in lista_asignaturas:",
-        "detail": "Proyecto.asignaturas",
+        "importPath": "Proyecto.routers.asignaturas",
+        "description": "Proyecto.routers.asignaturas",
+        "peekOfCode": "def modificar_asignatura(id: int, asignatura: Asignatura):\n    for index, asig_guardada in enumerate(lista_asignaturas):\n        if asig_guardada.id == id:\n            asignatura.id = id\n            lista_asignaturas[index] = asignatura\n            return asignatura\n    raise HTTPException(status_code=404, detail=\"Asignatura no encontrada\")\n@router.delete(\"/{id}\")\ndef borrar_asignatura(id: int):\n    for asignatura_guardada in lista_asignaturas:",
+        "detail": "Proyecto.routers.asignaturas",
         "documentation": {}
     },
     {
-        "label": "borrar_profesor",
+        "label": "borrar_asignatura",
         "kind": 2,
-        "importPath": "Proyecto.asignaturas",
-        "description": "Proyecto.asignaturas",
-        "peekOfCode": "def borrar_profesor(id:int):\n    for asignatura_guardada in lista_asignaturas:\n        if asignatura_guardada.id == id:\n            lista_asignaturas.remove(asignatura_guardada)\n            return{}\n    raise HTTPException(status_code=404 , detail=\"Profesor no encontrado\")",
-        "detail": "Proyecto.asignaturas",
+        "importPath": "Proyecto.routers.asignaturas",
+        "description": "Proyecto.routers.asignaturas",
+        "peekOfCode": "def borrar_asignatura(id: int):\n    for asignatura_guardada in lista_asignaturas:\n        if asignatura_guardada.id == id:\n            lista_asignaturas.remove(asignatura_guardada)\n            return {}\n    raise HTTPException(status_code=404, detail=\"Asignatura no encontrada\")",
+        "detail": "Proyecto.routers.asignaturas",
         "documentation": {}
     },
     {
-        "label": "app",
+        "label": "router",
         "kind": 5,
-        "importPath": "Proyecto.asignaturas",
-        "description": "Proyecto.asignaturas",
-        "peekOfCode": "app = FastAPI()\nclass Asignatura(BaseModel):\n    id : int\n    titulo : str\n    num_horas : int\n    id_profesor : int\nlista_asignaturas = [\n    Asignatura(id = 1, titulo=\"Programacion\", num_horas=10, id_profesor=3),\n    Asignatura(id = 2, titulo = \"Sistemas\" , num_horas=5, id_profesor = 1),\n    Asignatura(id = 3 , titulo = \"Moviles\" , num_horas = 3 , id_profesor = 2)",
-        "detail": "Proyecto.asignaturas",
+        "importPath": "Proyecto.routers.asignaturas",
+        "description": "Proyecto.routers.asignaturas",
+        "peekOfCode": "router = APIRouter(\n    prefix=\"/asignaturas\",\n    tags=[\"Asignaturas\"]\n)\nclass Asignatura(BaseModel):\n    id: int\n    titulo: str\n    num_horas: int\n    id_profesor: int\nlista_asignaturas = [",
+        "detail": "Proyecto.routers.asignaturas",
         "documentation": {}
     },
     {
         "label": "lista_asignaturas",
         "kind": 5,
-        "importPath": "Proyecto.asignaturas",
-        "description": "Proyecto.asignaturas",
-        "peekOfCode": "lista_asignaturas = [\n    Asignatura(id = 1, titulo=\"Programacion\", num_horas=10, id_profesor=3),\n    Asignatura(id = 2, titulo = \"Sistemas\" , num_horas=5, id_profesor = 1),\n    Asignatura(id = 3 , titulo = \"Moviles\" , num_horas = 3 , id_profesor = 2)\n]\ndef next_id():\n    return max(asignatura.id for asignatura in lista_asignaturas) + 1\n@app.get(\"/\")\ndef root():\n    return {\"message\": \"API de asignaturas\"}",
-        "detail": "Proyecto.asignaturas",
+        "importPath": "Proyecto.routers.asignaturas",
+        "description": "Proyecto.routers.asignaturas",
+        "peekOfCode": "lista_asignaturas = [\n    Asignatura(id=1, titulo=\"Programacion\", num_horas=10, id_profesor=3),\n    Asignatura(id=2, titulo=\"Sistemas\", num_horas=5, id_profesor=1),\n    Asignatura(id=3, titulo=\"Moviles\", num_horas=3, id_profesor=2)\n]\ndef next_id():\n    return max(a.id for a in lista_asignaturas) + 1\n@router.get(\"/\")\ndef buscar_asignaturas():\n    return lista_asignaturas",
+        "detail": "Proyecto.routers.asignaturas",
+        "documentation": {}
+    },
+    {
+        "label": "User",
+        "kind": 6,
+        "importPath": "Proyecto.routers.auth_users",
+        "description": "Proyecto.routers.auth_users",
+        "peekOfCode": "class User(BaseModel):\n    username: str\n    fullname: str\n    email: str\n    disabled: bool\nclass UserDB(User):\n    password: str\nusers_db = {\n    \"elenarg\": {\n        \"username\": \"elenarg\",",
+        "detail": "Proyecto.routers.auth_users",
+        "documentation": {}
+    },
+    {
+        "label": "UserDB",
+        "kind": 6,
+        "importPath": "Proyecto.routers.auth_users",
+        "description": "Proyecto.routers.auth_users",
+        "peekOfCode": "class UserDB(User):\n    password: str\nusers_db = {\n    \"elenarg\": {\n        \"username\": \"elenarg\",\n        \"fullname\": \"Elena Rivero\",\n        \"email\": \"elana@iesnervion.es\",\n        \"disabled\": False,\n        \"password\": \"123456\"\n    },",
+        "detail": "Proyecto.routers.auth_users",
+        "documentation": {}
+    },
+    {
+        "label": "register",
+        "kind": 2,
+        "importPath": "Proyecto.routers.auth_users",
+        "description": "Proyecto.routers.auth_users",
+        "peekOfCode": "def register(user: UserDB):\n    if user.username not in users_db:\n        hashed_password = password_hash.hash(user.password)\n        user.password = hashed_password\n        users_db[user.username] = user.model_dump()\n        return user\n    else:\n        raise HTTPException(status_code=409, detail=\"User already exists\")\n@router.post(\"/login\")\nasync def login (form: OAuth2PasswordRequestForm = Depends()):",
+        "detail": "Proyecto.routers.auth_users",
+        "documentation": {}
+    },
+    {
+        "label": "oauth2",
+        "kind": 5,
+        "importPath": "Proyecto.routers.auth_users",
+        "description": "Proyecto.routers.auth_users",
+        "peekOfCode": "oauth2 = OAuth2PasswordBearer(tokenUrl=\"login\")\n# Configuración JWT\nALGORITHM = \"HS256\"\nACCESS_TOKEN_EXPIRE_MINUTES = 1\nSECRET_KEY = \"14d0e194f16cad62eb2f966fae845984d720db01d7c72524b9f8fd82f07b45a0\"\n# Instanciamos el hash\npassword_hash = PasswordHash.recommended()\n# Router\nrouter = APIRouter(\n    prefix=\"/auth_users\",",
+        "detail": "Proyecto.routers.auth_users",
+        "documentation": {}
+    },
+    {
+        "label": "ALGORITHM",
+        "kind": 5,
+        "importPath": "Proyecto.routers.auth_users",
+        "description": "Proyecto.routers.auth_users",
+        "peekOfCode": "ALGORITHM = \"HS256\"\nACCESS_TOKEN_EXPIRE_MINUTES = 1\nSECRET_KEY = \"14d0e194f16cad62eb2f966fae845984d720db01d7c72524b9f8fd82f07b45a0\"\n# Instanciamos el hash\npassword_hash = PasswordHash.recommended()\n# Router\nrouter = APIRouter(\n    prefix=\"/auth_users\",\n    tags=[\"auth_users\"]\n)",
+        "detail": "Proyecto.routers.auth_users",
+        "documentation": {}
+    },
+    {
+        "label": "ACCESS_TOKEN_EXPIRE_MINUTES",
+        "kind": 5,
+        "importPath": "Proyecto.routers.auth_users",
+        "description": "Proyecto.routers.auth_users",
+        "peekOfCode": "ACCESS_TOKEN_EXPIRE_MINUTES = 1\nSECRET_KEY = \"14d0e194f16cad62eb2f966fae845984d720db01d7c72524b9f8fd82f07b45a0\"\n# Instanciamos el hash\npassword_hash = PasswordHash.recommended()\n# Router\nrouter = APIRouter(\n    prefix=\"/auth_users\",\n    tags=[\"auth_users\"]\n)\nclass User(BaseModel):",
+        "detail": "Proyecto.routers.auth_users",
+        "documentation": {}
+    },
+    {
+        "label": "SECRET_KEY",
+        "kind": 5,
+        "importPath": "Proyecto.routers.auth_users",
+        "description": "Proyecto.routers.auth_users",
+        "peekOfCode": "SECRET_KEY = \"14d0e194f16cad62eb2f966fae845984d720db01d7c72524b9f8fd82f07b45a0\"\n# Instanciamos el hash\npassword_hash = PasswordHash.recommended()\n# Router\nrouter = APIRouter(\n    prefix=\"/auth_users\",\n    tags=[\"auth_users\"]\n)\nclass User(BaseModel):\n    username: str",
+        "detail": "Proyecto.routers.auth_users",
+        "documentation": {}
+    },
+    {
+        "label": "password_hash",
+        "kind": 5,
+        "importPath": "Proyecto.routers.auth_users",
+        "description": "Proyecto.routers.auth_users",
+        "peekOfCode": "password_hash = PasswordHash.recommended()\n# Router\nrouter = APIRouter(\n    prefix=\"/auth_users\",\n    tags=[\"auth_users\"]\n)\nclass User(BaseModel):\n    username: str\n    fullname: str\n    email: str",
+        "detail": "Proyecto.routers.auth_users",
+        "documentation": {}
+    },
+    {
+        "label": "router",
+        "kind": 5,
+        "importPath": "Proyecto.routers.auth_users",
+        "description": "Proyecto.routers.auth_users",
+        "peekOfCode": "router = APIRouter(\n    prefix=\"/auth_users\",\n    tags=[\"auth_users\"]\n)\nclass User(BaseModel):\n    username: str\n    fullname: str\n    email: str\n    disabled: bool\nclass UserDB(User):",
+        "detail": "Proyecto.routers.auth_users",
+        "documentation": {}
+    },
+    {
+        "label": "users_db",
+        "kind": 5,
+        "importPath": "Proyecto.routers.auth_users",
+        "description": "Proyecto.routers.auth_users",
+        "peekOfCode": "users_db = {\n    \"elenarg\": {\n        \"username\": \"elenarg\",\n        \"fullname\": \"Elena Rivero\",\n        \"email\": \"elana@iesnervion.es\",\n        \"disabled\": False,\n        \"password\": \"123456\"\n    },\n    \"paquito\": {\n        \"username\": \"Samueljm\",",
+        "detail": "Proyecto.routers.auth_users",
         "documentation": {}
     },
     {
         "label": "Profesor",
         "kind": 6,
-        "importPath": "Proyecto.main",
-        "description": "Proyecto.main",
+        "importPath": "Proyecto.routers.profesores",
+        "description": "Proyecto.routers.profesores",
         "peekOfCode": "class Profesor(BaseModel):\n    id: Optional[int] = None\n    DNI: str\n    nombre: str\n    apellidos: str\n    telefono: str\n    direccion: str\n    cuentaBancaria: str\nprofesores_db = [\n    Profesor(id=1, DNI=\"123432456A\", nombre=\"Fernando\", apellidos=\"Galiana\", telefono=\"654123456\", direccion=\"Calle Victor Torres\", cuentaBancaria=\"ES3424234234\"),",
-        "detail": "Proyecto.main",
-        "documentation": {}
-    },
-    {
-        "label": "root",
-        "kind": 2,
-        "importPath": "Proyecto.main",
-        "description": "Proyecto.main",
-        "peekOfCode": "def root():\n    return {\"message\": \"API de Profesores\"}\n@app.get(\"/profesores\")\ndef get_profesores():\n    return profesores_db\n@app.get(\"/profesores/{id}\")\ndef get_profesor(id: int):\n    for profesor in profesores_db:\n        if profesor.id == id:\n            return profesor",
-        "detail": "Proyecto.main",
-        "documentation": {}
-    },
-    {
-        "label": "get_profesores",
-        "kind": 2,
-        "importPath": "Proyecto.main",
-        "description": "Proyecto.main",
-        "peekOfCode": "def get_profesores():\n    return profesores_db\n@app.get(\"/profesores/{id}\")\ndef get_profesor(id: int):\n    for profesor in profesores_db:\n        if profesor.id == id:\n            return profesor\n    return {\"error\": \"Profesor no encontrado\"}\n@app.get(\"/profesores/buscarDNI/{DNI}\")\ndef get_profesor_dni(DNI: str):",
-        "detail": "Proyecto.main",
-        "documentation": {}
-    },
-    {
-        "label": "get_profesor",
-        "kind": 2,
-        "importPath": "Proyecto.main",
-        "description": "Proyecto.main",
-        "peekOfCode": "def get_profesor(id: int):\n    for profesor in profesores_db:\n        if profesor.id == id:\n            return profesor\n    return {\"error\": \"Profesor no encontrado\"}\n@app.get(\"/profesores/buscarDNI/{DNI}\")\ndef get_profesor_dni(DNI: str):\n    for profesor in profesores_db:\n        if profesor.DNI == DNI:\n            return profesor",
-        "detail": "Proyecto.main",
-        "documentation": {}
-    },
-    {
-        "label": "get_profesor_dni",
-        "kind": 2,
-        "importPath": "Proyecto.main",
-        "description": "Proyecto.main",
-        "peekOfCode": "def get_profesor_dni(DNI: str):\n    for profesor in profesores_db:\n        if profesor.DNI == DNI:\n            return profesor\n    return {\"error\": \"Profesor no encontrado\"}\n@app.get(\"/profesores/buscarNombre/{nombre}\")\ndef get_profesor_nombre(nombre: str):\n    for profesor in profesores_db:\n        if profesor.nombre == nombre:\n            return profesor",
-        "detail": "Proyecto.main",
-        "documentation": {}
-    },
-    {
-        "label": "get_profesor_nombre",
-        "kind": 2,
-        "importPath": "Proyecto.main",
-        "description": "Proyecto.main",
-        "peekOfCode": "def get_profesor_nombre(nombre: str):\n    for profesor in profesores_db:\n        if profesor.nombre == nombre:\n            return profesor\n    return {\"error\": \"Profesor no encontrado\"}\n@app.get(\"/profesores/buscarTelefono/{telefono}\")\ndef get_profesor_telefono(telefono: str):\n    for profesor in profesores_db:\n        if profesor.telefono == telefono:\n            return profesor",
-        "detail": "Proyecto.main",
-        "documentation": {}
-    },
-    {
-        "label": "get_profesor_telefono",
-        "kind": 2,
-        "importPath": "Proyecto.main",
-        "description": "Proyecto.main",
-        "peekOfCode": "def get_profesor_telefono(telefono: str):\n    for profesor in profesores_db:\n        if profesor.telefono == telefono:\n            return profesor\n    return {\"error\": \"Profesor no encontrado\"}\n@app.get(\"/profesores/\")\ndef get_query_telefo_dni(dni: str):\n    for profesor in profesores_db:\n        if profesor.DNI == dni:\n            return profesor",
-        "detail": "Proyecto.main",
-        "documentation": {}
-    },
-    {
-        "label": "get_query_telefo_dni",
-        "kind": 2,
-        "importPath": "Proyecto.main",
-        "description": "Proyecto.main",
-        "peekOfCode": "def get_query_telefo_dni(dni: str):\n    for profesor in profesores_db:\n        if profesor.DNI == dni:\n            return profesor\n    return {\"error\": \"No hay un profesor con esas características\"}\ndef next_id():\n    return max(profesor.id for profesor in profesores_db) + 1\n@app.post(\"/profesores\" , status_code=201, response_model=Profesor)\ndef añadir_profesor(profesor: Profesor):\n    profesor.id=next_id()",
-        "detail": "Proyecto.main",
+        "detail": "Proyecto.routers.profesores",
         "documentation": {}
     },
     {
         "label": "next_id",
         "kind": 2,
-        "importPath": "Proyecto.main",
-        "description": "Proyecto.main",
-        "peekOfCode": "def next_id():\n    return max(profesor.id for profesor in profesores_db) + 1\n@app.post(\"/profesores\" , status_code=201, response_model=Profesor)\ndef añadir_profesor(profesor: Profesor):\n    profesor.id=next_id()\n    profesores_db.append(profesor)\n    return profesor\n@app.put(\"/profesores\" , response_model=Profesor)\ndef modificar_profesor(id: int, profesor: Profesor):\n        for index, profesor_guardado in enumerate(profesores_db):",
-        "detail": "Proyecto.main",
+        "importPath": "Proyecto.routers.profesores",
+        "description": "Proyecto.routers.profesores",
+        "peekOfCode": "def next_id():\n    return max(p.id for p in profesores_db) + 1\n@router.get(\"/\")\ndef get_profesores():\n    return profesores_db\n@router.get(\"/{id}\")\ndef get_profesor(id: int):\n    for profesor in profesores_db:\n        if profesor.id == id:\n            return profesor",
+        "detail": "Proyecto.routers.profesores",
+        "documentation": {}
+    },
+    {
+        "label": "get_profesores",
+        "kind": 2,
+        "importPath": "Proyecto.routers.profesores",
+        "description": "Proyecto.routers.profesores",
+        "peekOfCode": "def get_profesores():\n    return profesores_db\n@router.get(\"/{id}\")\ndef get_profesor(id: int):\n    for profesor in profesores_db:\n        if profesor.id == id:\n            return profesor\n    raise HTTPException(status_code=404, detail=\"Profesor no encontrado\")\n@router.get(\"/buscarDNI/{DNI}\")\ndef get_profesor_dni(DNI: str):",
+        "detail": "Proyecto.routers.profesores",
+        "documentation": {}
+    },
+    {
+        "label": "get_profesor",
+        "kind": 2,
+        "importPath": "Proyecto.routers.profesores",
+        "description": "Proyecto.routers.profesores",
+        "peekOfCode": "def get_profesor(id: int):\n    for profesor in profesores_db:\n        if profesor.id == id:\n            return profesor\n    raise HTTPException(status_code=404, detail=\"Profesor no encontrado\")\n@router.get(\"/buscarDNI/{DNI}\")\ndef get_profesor_dni(DNI: str):\n    for profesor in profesores_db:\n        if profesor.DNI == DNI:\n            return profesor",
+        "detail": "Proyecto.routers.profesores",
+        "documentation": {}
+    },
+    {
+        "label": "get_profesor_dni",
+        "kind": 2,
+        "importPath": "Proyecto.routers.profesores",
+        "description": "Proyecto.routers.profesores",
+        "peekOfCode": "def get_profesor_dni(DNI: str):\n    for profesor in profesores_db:\n        if profesor.DNI == DNI:\n            return profesor\n    raise HTTPException(status_code=404, detail=\"Profesor no encontrado\")\n@router.get(\"/buscarNombre/{nombre}\")\ndef get_profesor_nombre(nombre: str):\n    for profesor in profesores_db:\n        if profesor.nombre == nombre:\n            return profesor",
+        "detail": "Proyecto.routers.profesores",
+        "documentation": {}
+    },
+    {
+        "label": "get_profesor_nombre",
+        "kind": 2,
+        "importPath": "Proyecto.routers.profesores",
+        "description": "Proyecto.routers.profesores",
+        "peekOfCode": "def get_profesor_nombre(nombre: str):\n    for profesor in profesores_db:\n        if profesor.nombre == nombre:\n            return profesor\n    raise HTTPException(status_code=404, detail=\"Profesor no encontrado\")\n@router.get(\"/buscarTelefono/{telefono}\")\ndef get_profesor_telefono(telefono: str):\n    for profesor in profesores_db:\n        if profesor.telefono == telefono:\n            return profesor",
+        "detail": "Proyecto.routers.profesores",
+        "documentation": {}
+    },
+    {
+        "label": "get_profesor_telefono",
+        "kind": 2,
+        "importPath": "Proyecto.routers.profesores",
+        "description": "Proyecto.routers.profesores",
+        "peekOfCode": "def get_profesor_telefono(telefono: str):\n    for profesor in profesores_db:\n        if profesor.telefono == telefono:\n            return profesor\n    raise HTTPException(status_code=404, detail=\"Profesor no encontrado\")\n@router.post(\"/\", status_code=201, response_model=Profesor)\ndef añadir_profesor(profesor: Profesor):\n    profesor.id = next_id()\n    profesores_db.append(profesor)\n    return profesor",
+        "detail": "Proyecto.routers.profesores",
         "documentation": {}
     },
     {
         "label": "añadir_profesor",
         "kind": 2,
-        "importPath": "Proyecto.main",
-        "description": "Proyecto.main",
-        "peekOfCode": "def añadir_profesor(profesor: Profesor):\n    profesor.id=next_id()\n    profesores_db.append(profesor)\n    return profesor\n@app.put(\"/profesores\" , response_model=Profesor)\ndef modificar_profesor(id: int, profesor: Profesor):\n        for index, profesor_guardado in enumerate(profesores_db):\n            if(profesor_guardado.id == id):\n                profesor.id=id\n                profesores_db[index] = profesor",
-        "detail": "Proyecto.main",
+        "importPath": "Proyecto.routers.profesores",
+        "description": "Proyecto.routers.profesores",
+        "peekOfCode": "def añadir_profesor(profesor: Profesor):\n    profesor.id = next_id()\n    profesores_db.append(profesor)\n    return profesor\n@router.put(\"/\", response_model=Profesor)\ndef modificar_profesor(id: int, profesor: Profesor):\n    for index, profesor_guardado in enumerate(profesores_db):\n        if profesor_guardado.id == id:\n            profesor.id = id\n            profesores_db[index] = profesor",
+        "detail": "Proyecto.routers.profesores",
         "documentation": {}
     },
     {
         "label": "modificar_profesor",
         "kind": 2,
-        "importPath": "Proyecto.main",
-        "description": "Proyecto.main",
-        "peekOfCode": "def modificar_profesor(id: int, profesor: Profesor):\n        for index, profesor_guardado in enumerate(profesores_db):\n            if(profesor_guardado.id == id):\n                profesor.id=id\n                profesores_db[index] = profesor\n                return profesor\n        raise HTTPException(status_code=404, detail=\"Profesor no encontrado\")\n@app.delete(\"/profesores/{id}\")\ndef borrar_profesor(id:int):\n    for profesor_guardado in profesores_db:",
-        "detail": "Proyecto.main",
+        "importPath": "Proyecto.routers.profesores",
+        "description": "Proyecto.routers.profesores",
+        "peekOfCode": "def modificar_profesor(id: int, profesor: Profesor):\n    for index, profesor_guardado in enumerate(profesores_db):\n        if profesor_guardado.id == id:\n            profesor.id = id\n            profesores_db[index] = profesor\n            return profesor\n    raise HTTPException(status_code=404, detail=\"Profesor no encontrado\")\n@router.delete(\"/{id}\")\ndef borrar_profesor(id: int):\n    for profesor_guardado in profesores_db:",
+        "detail": "Proyecto.routers.profesores",
         "documentation": {}
     },
     {
         "label": "borrar_profesor",
         "kind": 2,
-        "importPath": "Proyecto.main",
-        "description": "Proyecto.main",
-        "peekOfCode": "def borrar_profesor(id:int):\n    for profesor_guardado in profesores_db:\n        if profesor_guardado.id == id:\n            profesores_db.remove(profesor_guardado)\n            return{}\n    raise HTTPException(status_code=404 , detail=\"Profesor no encontrado\")",
-        "detail": "Proyecto.main",
+        "importPath": "Proyecto.routers.profesores",
+        "description": "Proyecto.routers.profesores",
+        "peekOfCode": "def borrar_profesor(id: int):\n    for profesor_guardado in profesores_db:\n        if profesor_guardado.id == id:\n            profesores_db.remove(profesor_guardado)\n            return {}\n    raise HTTPException(status_code=404, detail=\"Profesor no encontrado\")\n@router.get(\"/{id}/asignaturas\")\ndef get_profesor_asignatura(id : int):\n    for asignatura in lista_asignaturas:\n            if asignatura.id_profesor == id:",
+        "detail": "Proyecto.routers.profesores",
         "documentation": {}
     },
     {
-        "label": "app",
+        "label": "get_profesor_asignatura",
+        "kind": 2,
+        "importPath": "Proyecto.routers.profesores",
+        "description": "Proyecto.routers.profesores",
+        "peekOfCode": "def get_profesor_asignatura(id : int):\n    for asignatura in lista_asignaturas:\n            if asignatura.id_profesor == id:\n                return asignatura\n            raise HTTPException(status_code=404, detail=\"Asignatura no encontrada\")\n    raise HTTPException(status_code=404, detail=\"Profesor no encontrado\")",
+        "detail": "Proyecto.routers.profesores",
+        "documentation": {}
+    },
+    {
+        "label": "router",
         "kind": 5,
-        "importPath": "Proyecto.main",
-        "description": "Proyecto.main",
-        "peekOfCode": "app = FastAPI()\nclass Profesor(BaseModel):\n    id: Optional[int] = None\n    DNI: str\n    nombre: str\n    apellidos: str\n    telefono: str\n    direccion: str\n    cuentaBancaria: str\nprofesores_db = [",
-        "detail": "Proyecto.main",
+        "importPath": "Proyecto.routers.profesores",
+        "description": "Proyecto.routers.profesores",
+        "peekOfCode": "router = APIRouter(\n    prefix=\"/profesores\",\n    tags=[\"Profesores\"]\n)\nclass Profesor(BaseModel):\n    id: Optional[int] = None\n    DNI: str\n    nombre: str\n    apellidos: str\n    telefono: str",
+        "detail": "Proyecto.routers.profesores",
         "documentation": {}
     },
     {
         "label": "profesores_db",
         "kind": 5,
-        "importPath": "Proyecto.main",
-        "description": "Proyecto.main",
-        "peekOfCode": "profesores_db = [\n    Profesor(id=1, DNI=\"123432456A\", nombre=\"Fernando\", apellidos=\"Galiana\", telefono=\"654123456\", direccion=\"Calle Victor Torres\", cuentaBancaria=\"ES3424234234\"),\n    Profesor(id=2, DNI=\"654646747B\", nombre=\"David\", apellidos=\"Bermudez\", telefono=\"654987654\", direccion=\"Avenida Nervion\", cuentaBancaria=\"ES654765873\"),\n    Profesor(id=3, DNI=\"11111111C\", nombre=\"Elena\", apellidos=\"Rivero\", telefono=\"654456789\", direccion=\"Plaza España\", cuentaBancaria=\"ES14342443244\")\n]\n@app.get(\"/\")\ndef root():\n    return {\"message\": \"API de Profesores\"}\n@app.get(\"/profesores\")\ndef get_profesores():",
-        "detail": "Proyecto.main",
+        "importPath": "Proyecto.routers.profesores",
+        "description": "Proyecto.routers.profesores",
+        "peekOfCode": "profesores_db = [\n    Profesor(id=1, DNI=\"123432456A\", nombre=\"Fernando\", apellidos=\"Galiana\", telefono=\"654123456\", direccion=\"Calle Victor Torres\", cuentaBancaria=\"ES3424234234\"),\n    Profesor(id=2, DNI=\"654646747B\", nombre=\"David\", apellidos=\"Bermudez\", telefono=\"654987654\", direccion=\"Avenida Nervion\", cuentaBancaria=\"ES654765873\"),\n    Profesor(id=3, DNI=\"11111111C\", nombre=\"Elena\", apellidos=\"Rivero\", telefono=\"654456789\", direccion=\"Plaza España\", cuentaBancaria=\"ES14342443244\")\n]\ndef next_id():\n    return max(p.id for p in profesores_db) + 1\n@router.get(\"/\")\ndef get_profesores():\n    return profesores_db",
+        "detail": "Proyecto.routers.profesores",
         "documentation": {}
     }
 ]
